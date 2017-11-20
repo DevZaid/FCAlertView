@@ -246,7 +246,14 @@ open class FCAlertView: UIView {
 
         descriptionLabel.numberOfLines = 4
         descriptionLabel.textColor = subTitleColor
-        descriptionLabel.text = subTitle
+
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = 8
+
+        let attributedText = NSMutableAttributedString(string: subTitle)
+        attributedText.addAttribute(.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, subTitle.count))
+
+        descriptionLabel.attributedText = attributedText
         descriptionLabel.textAlignment = .center
         descriptionLabel.adjustsFontSizeToFitWidth = true
 
