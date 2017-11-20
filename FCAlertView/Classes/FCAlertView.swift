@@ -58,6 +58,10 @@ open class FCAlertView: UIView {
     open var hideAllButtons = false
     open var hideDoneButton = false
 
+    open var regularFontName: String?
+    open var mediumFontName: String?
+    open var lightFontName: String?
+
     // Color Schemes
     open var colorScheme: UIColor?
     open var titleColor: UIColor = .black
@@ -225,7 +229,7 @@ open class FCAlertView: UIView {
                                                y: 20.0 + CGFloat(alertViewWithVector * 30),
                                                width: alertViewFrame.size.width - 30.0,
                                                height: 20.0))
-        titleLabel.font = UIFont.systemFont(ofSize: 18, weight: UIFont.Weight.medium)
+        titleLabel.font = mediumFontWith(size: 18)
         titleLabel.numberOfLines = 1
         titleLabel.textColor = titleColor
         titleLabel.text = title
@@ -237,8 +241,8 @@ open class FCAlertView: UIView {
                                                      y: CGFloat(descriptionLevel + alertViewWithVector * 30),
                                                      width: alertViewFrame.size.width - 50.0,
                                                      height: 60.0))
-        descriptionLabel.font = (title == nil) ? UIFont.systemFont(ofSize: 16, weight: UIFont.Weight.regular) :
-            UIFont.systemFont(ofSize: 15, weight: UIFont.Weight.light)
+        descriptionLabel.font = (title == nil) ? regularFontWith(size: 16) :
+            lightFontWith(size: 15)
 
         descriptionLabel.numberOfLines = 4
         descriptionLabel.textColor = subTitleColor
@@ -321,7 +325,7 @@ open class FCAlertView: UIView {
                                       height: 45)
             doneButton.setTitle(doneTitle, for: UIControlState())
             doneButton.addTarget(self, action: #selector(donePressed(_:)), for: .touchUpInside)
-            doneButton.titleLabel!.font = UIFont.systemFont(ofSize: 18, weight: UIFont.Weight.medium)
+            doneButton.titleLabel!.font = mediumFontWith(size: 18)
 
 
             alertView!.addSubview(doneButton)
@@ -334,7 +338,7 @@ open class FCAlertView: UIView {
 
             otherButton.setTitle(buttonTitles![0], for: UIControlState())
             otherButton.addTarget(self, action: #selector(handleButton(_:)), for: .touchUpInside)
-            otherButton.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: UIFont.Weight.regular)
+            otherButton.titleLabel?.font = regularFontWith(size: 16)
             otherButton.tintColor = colorScheme
             otherButton.titleLabel?.adjustsFontSizeToFitWidth = true
             otherButton.titleLabel?.minimumScaleFactor = 0.8
@@ -363,7 +367,7 @@ open class FCAlertView: UIView {
                                           height: 45)
                 doneButton.setTitle(doneTitle, for: UIControlState())
                 doneButton.addTarget(self, action: #selector(donePressed(_:)), for: .touchUpInside)
-                doneButton.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: UIFont.Weight.medium)
+                doneButton.titleLabel?.font = mediumFontWith(size: 16)
 
                 let horizontalSeparator = UIView(frame: CGRect(x: alertViewFrame.size.width/2 - 1,
                                                                y: otherButton.frame.origin.y - 2,
@@ -407,7 +411,7 @@ open class FCAlertView: UIView {
 
             firstButton.setTitle(buttonTitles![0], for: UIControlState())
             firstButton.addTarget(self, action: #selector(handleButton(_:)), for: .touchUpInside)
-            firstButton.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: UIFont.Weight.regular)
+            firstButton.titleLabel?.font = regularFontWith(size: 16)
             firstButton.tintColor = colorScheme
             firstButton.titleLabel?.adjustsFontSizeToFitWidth = true
             firstButton.titleLabel?.minimumScaleFactor = 0.8
@@ -417,7 +421,7 @@ open class FCAlertView: UIView {
             secondButton.backgroundColor = .white
             secondButton.setTitle(buttonTitles![1], for: UIControlState())
             secondButton.addTarget(self, action: #selector(handleButton(_:)), for: .touchUpInside)
-            secondButton.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: UIFont.Weight.regular)
+            secondButton.titleLabel?.font = regularFontWith(size: 16)
             secondButton.tintColor = colorScheme
             secondButton.titleLabel?.adjustsFontSizeToFitWidth = true
             secondButton.titleLabel?.minimumScaleFactor = 0.8
@@ -467,7 +471,7 @@ open class FCAlertView: UIView {
                                           height: 45)
                 doneButton.setTitle(doneTitle, for: UIControlState())
                 doneButton.addTarget(self, action: #selector(donePressed(_:)), for: .touchUpInside)
-                doneButton.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: UIFont.Weight.medium)
+                doneButton.titleLabel?.font = mediumFontWith(size: 18)
 
                 alertView!.addSubview(doneButton)
             }else {
@@ -550,7 +554,26 @@ open class FCAlertView: UIView {
         self.colorScheme = color
     }
 
-    //Presenting AlertView
+    //MARK: Font Handling
+
+    fileprivate func regularFontWith(size: CGFloat) -> UIFont {
+        guard let fontName = self.regularFontName else { return UIFont.systemFont(ofSize: size) }
+        return UIFont(name: fontName, size: size)!
+    }
+
+    fileprivate func mediumFontWith(size: CGFloat) -> UIFont {
+        guard let fontName = self.mediumFontName else { return UIFont.systemFont(ofSize: size, weight: .medium) }
+        return UIFont(name: fontName, size: size)!
+    }
+
+    fileprivate func lightFontWith(size: CGFloat) -> UIFont {
+        guard let fontName = self.lightFontName else { return UIFont.systemFont(ofSize: size, weight: .light) }
+        return UIFont(name: fontName, size: size)!
+    }
+
+
+
+    //MARK: - Presenting AlertView
     open func showAlert(in alertView: UIViewController, withTitle title: String?, withSubtitle subTitle: String, withCustomImage image: UIImage?, withDoneButtonTitle done: String?, andButtons buttons: [String]?) {
 
         self.title = title
