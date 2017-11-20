@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CED742B71FC3093700C477D2 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED742B31FC3093700C477D2 /* Colors.swift */; };
-		CED742B81FC3093700C477D2 /* FCAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = CED742B41FC3093700C477D2 /* FCAlertView.h */; };
+		CED742B81FC3093700C477D2 /* FCAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = CED742B41FC3093700C477D2 /* FCAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CED742B91FC3093700C477D2 /* FCAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED742B51FC3093700C477D2 /* FCAlertView.swift */; };
 		CED742BA1FC3093700C477D2 /* FCAlertViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED742B61FC3093700C477D2 /* FCAlertViewDelegate.swift */; };
 		CED742BF1FC3095200C477D2 /* alert-round.png in Resources */ = {isa = PBXBuildFile; fileRef = CED742BC1FC3095200C477D2 /* alert-round.png */; };
@@ -305,7 +305,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -325,7 +325,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.krispenney.FCAlertView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;

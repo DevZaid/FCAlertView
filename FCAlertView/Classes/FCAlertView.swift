@@ -496,13 +496,12 @@ open class FCAlertView: UIView {
     circleLayer.path = UIBezierPath(ovalIn: CGRect(x: alertViewContents!.frame.size.width/2 - 30.0, y: -30.0, width: 60.0, height: 60.0)).cgPath
     
     
-    let alertViewVector = UIButton(type: .system)
+    let alertViewVector = UIImageView()
     alertViewVector.frame = CGRect(x: alertViewContents!.frame.size.width/2 - 15.0,
                                        y: -15.0,
                                        width: 30.0,
                                        height: 30.0)
-    alertViewVector.setImage(vectorImage, for: UIControlState())
-    alertViewVector.isUserInteractionEnabled = false
+    alertViewVector.image = vectorImage
     alertViewVector.tintColor = colorScheme
     
     //  VIEW Border - Rounding Corners of AlertView
