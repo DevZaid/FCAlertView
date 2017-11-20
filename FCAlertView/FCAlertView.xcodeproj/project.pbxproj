@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		013CA5F91D7C973E003B6EE4 /* FCAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 013CA5F81D7C973E003B6EE4 /* FCAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		013CA6031D7C976A003B6EE4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013CA6001D7C976A003B6EE4 /* Colors.swift */; };
-		013CA6041D7C976A003B6EE4 /* FCAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013CA6011D7C976A003B6EE4 /* FCAlertView.swift */; };
-		013CA6051D7C976A003B6EE4 /* FCAlertViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013CA6021D7C976A003B6EE4 /* FCAlertViewDelegate.swift */; };
-		01BB58A61D7F9B56006C3586 /* alert-round.png in Resources */ = {isa = PBXBuildFile; fileRef = 01BB58A31D7F9B56006C3586 /* alert-round.png */; };
-		01BB58A71D7F9B56006C3586 /* checkmark-round.png in Resources */ = {isa = PBXBuildFile; fileRef = 01BB58A41D7F9B56006C3586 /* checkmark-round.png */; };
-		01BB58A81D7F9B56006C3586 /* close-round.png in Resources */ = {isa = PBXBuildFile; fileRef = 01BB58A51D7F9B56006C3586 /* close-round.png */; };
+		CED742B71FC3093700C477D2 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED742B31FC3093700C477D2 /* Colors.swift */; };
+		CED742B81FC3093700C477D2 /* FCAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = CED742B41FC3093700C477D2 /* FCAlertView.h */; };
+		CED742B91FC3093700C477D2 /* FCAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED742B51FC3093700C477D2 /* FCAlertView.swift */; };
+		CED742BA1FC3093700C477D2 /* FCAlertViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED742B61FC3093700C477D2 /* FCAlertViewDelegate.swift */; };
+		CED742BF1FC3095200C477D2 /* alert-round.png in Resources */ = {isa = PBXBuildFile; fileRef = CED742BC1FC3095200C477D2 /* alert-round.png */; };
+		CED742C01FC3095200C477D2 /* checkmark-round.png in Resources */ = {isa = PBXBuildFile; fileRef = CED742BD1FC3095200C477D2 /* checkmark-round.png */; };
+		CED742C11FC3095200C477D2 /* close-round.png in Resources */ = {isa = PBXBuildFile; fileRef = CED742BE1FC3095200C477D2 /* close-round.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		013CA5F51D7C973E003B6EE4 /* FCAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FCAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		013CA5F81D7C973E003B6EE4 /* FCAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCAlertView.h; sourceTree = "<group>"; };
 		013CA5FA1D7C973E003B6EE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		013CA6001D7C976A003B6EE4 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		013CA6011D7C976A003B6EE4 /* FCAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCAlertView.swift; sourceTree = "<group>"; };
-		013CA6021D7C976A003B6EE4 /* FCAlertViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCAlertViewDelegate.swift; sourceTree = "<group>"; };
-		01BB58A31D7F9B56006C3586 /* alert-round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-round.png"; sourceTree = "<group>"; };
-		01BB58A41D7F9B56006C3586 /* checkmark-round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkmark-round.png"; sourceTree = "<group>"; };
-		01BB58A51D7F9B56006C3586 /* close-round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-round.png"; sourceTree = "<group>"; };
+		CED742B31FC3093700C477D2 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		CED742B41FC3093700C477D2 /* FCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCAlertView.h; sourceTree = "<group>"; };
+		CED742B51FC3093700C477D2 /* FCAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCAlertView.swift; sourceTree = "<group>"; };
+		CED742B61FC3093700C477D2 /* FCAlertViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCAlertViewDelegate.swift; sourceTree = "<group>"; };
+		CED742BC1FC3095200C477D2 /* alert-round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-round.png"; sourceTree = "<group>"; };
+		CED742BD1FC3095200C477D2 /* checkmark-round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkmark-round.png"; sourceTree = "<group>"; };
+		CED742BE1FC3095200C477D2 /* close-round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-round.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +58,33 @@
 		013CA5F71D7C973E003B6EE4 /* FCAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				013CA6001D7C976A003B6EE4 /* Colors.swift */,
-				013CA6011D7C976A003B6EE4 /* FCAlertView.swift */,
-				013CA6021D7C976A003B6EE4 /* FCAlertViewDelegate.swift */,
-				01BB58A31D7F9B56006C3586 /* alert-round.png */,
-				01BB58A41D7F9B56006C3586 /* checkmark-round.png */,
-				01BB58A51D7F9B56006C3586 /* close-round.png */,
-				013CA5F81D7C973E003B6EE4 /* FCAlertView.h */,
+				CED742B21FC3093700C477D2 /* Classes */,
+				CED742BB1FC3095200C477D2 /* Assets */,
 				013CA5FA1D7C973E003B6EE4 /* Info.plist */,
 			);
 			path = FCAlertView;
 			sourceTree = "<group>";
+		};
+		CED742B21FC3093700C477D2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CED742B31FC3093700C477D2 /* Colors.swift */,
+				CED742B41FC3093700C477D2 /* FCAlertView.h */,
+				CED742B51FC3093700C477D2 /* FCAlertView.swift */,
+				CED742B61FC3093700C477D2 /* FCAlertViewDelegate.swift */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		CED742BB1FC3095200C477D2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CED742BC1FC3095200C477D2 /* alert-round.png */,
+				CED742BD1FC3095200C477D2 /* checkmark-round.png */,
+				CED742BE1FC3095200C477D2 /* close-round.png */,
+			);
+			path = Assets;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -77,7 +93,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				013CA5F91D7C973E003B6EE4 /* FCAlertView.h in Headers */,
+				CED742B81FC3093700C477D2 /* FCAlertView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,9 +159,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01BB58A81D7F9B56006C3586 /* close-round.png in Resources */,
-				01BB58A71D7F9B56006C3586 /* checkmark-round.png in Resources */,
-				01BB58A61D7F9B56006C3586 /* alert-round.png in Resources */,
+				CED742C11FC3095200C477D2 /* close-round.png in Resources */,
+				CED742C01FC3095200C477D2 /* checkmark-round.png in Resources */,
+				CED742BF1FC3095200C477D2 /* alert-round.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,9 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				013CA6051D7C976A003B6EE4 /* FCAlertViewDelegate.swift in Sources */,
-				013CA6041D7C976A003B6EE4 /* FCAlertView.swift in Sources */,
-				013CA6031D7C976A003B6EE4 /* Colors.swift in Sources */,
+				CED742BA1FC3093700C477D2 /* FCAlertViewDelegate.swift in Sources */,
+				CED742B91FC3093700C477D2 /* FCAlertView.swift in Sources */,
+				CED742B71FC3093700C477D2 /* Colors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
