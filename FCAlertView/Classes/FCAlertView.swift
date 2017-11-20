@@ -498,9 +498,9 @@ open class FCAlertView: UIView {
     
     let alertViewVector = UIImageView()
     alertViewVector.frame = CGRect(x: alertViewContents!.frame.size.width/2 - 15.0,
-                                       y: -15.0,
-                                       width: 30.0,
-                                       height: 30.0)
+                                       y: -30.0,
+                                       width: 60.0,
+                                       height: 60.0)
     alertViewVector.image = vectorImage
     alertViewVector.tintColor = colorScheme
     
