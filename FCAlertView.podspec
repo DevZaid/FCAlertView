@@ -22,15 +22,14 @@ FCAlertView is a fully customizable and beautifully designed AlertView. I design
                        DESC
 
   s.homepage         = 'https://github.com/uecm/FCAlertView'
-#  s.screenshots     = 'https://github.com/nimati/FCAlertView/blob/master/Images/ScreenShots/ScreenShot.png?raw=true', 'https://github.com/nimati/FCAlertView/blob/master/Images/ScreenShots/ScreenShot2.png?raw=true'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Nima Tahami' => 'nimat6462@yahoo.ca' }
+  s.author           = { 'Greg Kisilov' => 'gregiosdev@gmail.com' }
   s.source           = { :git => 'https://github.com/uecm/FCAlertView.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files  = "Classes", "Classes/**/*.{swift}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "Classes", "FCAlertView/Classes/*.{swift}"
+  s.exclude_files = "FCAlertView/Classes/Exclude"
   
   s.resource_bundles = {
     'FCAlertView' => ['FCAlertView/Assets/*.png']
