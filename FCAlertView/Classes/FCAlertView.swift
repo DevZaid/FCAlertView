@@ -26,6 +26,8 @@ open class FCAlertView: UIView {
         circle.fillColor = UIColor.white.cgColor
         return circle
     }()
+    
+    open var didSelectOtherButton : ((_ title:String) -> ())?
 
     var buttonTitles: [String]?
     var alertViewWithVector = 0
@@ -641,7 +643,10 @@ open class FCAlertView: UIView {
     }
 
     @objc fileprivate func handleButton(_ sender: UIButton){
+        
         guard let delegate = delegate else {
+            didSelectOtherButton?(sender.titleLabel!.text!)
+            self.dismissAlertView()
             return
         }
 
