@@ -247,6 +247,18 @@ func FCAlertDoneButtonClicked(in alertView: FCAlertView){
 
 # Other Helper Methods
 
+### Using closures :
+
+```Swift
+let alert = FCAlertView()
+alert.didSelectDoneButton = {
+    print("done")
+}
+alert.didSelectOtherButton = { buttonTitle in
+	print(buttonTitle)
+}
+```
+
 Make sure to add the ```FCAlertViewDelegate``` protocol to your View Controller as such:
 
 ```Swift
