@@ -27,8 +27,9 @@ open class FCAlertView: UIView {
         return circle
     }()
     
+    open var didSelectDoneButton : (() -> ())?
     open var didSelectOtherButton : ((_ title:String) -> ())?
-
+    
     var buttonTitles: [String]?
     var alertViewWithVector = 0
     var doneTitle: String?
@@ -657,6 +658,8 @@ open class FCAlertView: UIView {
 
     @objc fileprivate func donePressed(_ sender: UIButton){
 
+        didSelectDoneButton?()
+        
         if let delegate = delegate {
             delegate.FCAlertDoneButtonClicked(in: self)
         }
