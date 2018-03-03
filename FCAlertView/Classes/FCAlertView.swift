@@ -69,7 +69,8 @@ open class FCAlertView: UIView {
     open var colorScheme: UIColor?
     open var titleColor: UIColor = .black
     open var subTitleColor: UIColor = .black
-
+    
+    open var descriptionLabelHeight: CGFloat = 60.0
 
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -243,7 +244,7 @@ open class FCAlertView: UIView {
         let descriptionLabel = UILabel(frame: CGRect(x: 25.0,
                                                      y: CGFloat(descriptionLevel + alertViewWithVector * 30),
                                                      width: alertViewFrame.size.width - 50.0,
-                                                     height: 60.0))
+                                                     height: descriptionLabelHeight))
         descriptionLabel.font = (title == nil) ? regularFontWith(size: 16) :
             lightFontWith(size: 15)
 
