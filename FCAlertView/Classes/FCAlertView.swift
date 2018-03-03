@@ -16,8 +16,8 @@ public enum FCAlertType {
 
 open class FCAlertView: UIView {
 
-    var defaultHeight: CGFloat = 200
-    var defaultSpacing: CGFloat = 105
+    open var defaultHeight: CGFloat = 200
+    open var defaultSpacing: CGFloat = 105
 
     var alertView: UIView?
     var alertViewContents: UIView?
